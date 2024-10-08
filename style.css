@@ -1,0 +1,1203 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #F6F6F8;
+}
+body #login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 75px;
+}
+body #login #logintext {
+  margin-top: 200px;
+  width: 324px;
+  height: 146px;
+}
+body #login #logintext #maintext {
+  text-align: center;
+  color: black;
+  font-weight: 900;
+  font-family: "Manrope";
+  font-size: 100px;
+}
+body #login #logintext #errortext {
+  color: #FA5300;
+  font-weight: 900;
+  font-family: "Manrope";
+  font-size: 18px;
+  text-align: center;
+}
+body #login #forms {
+  width: 1000px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+body #login #forms #formsholder {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+body #login #forms #formsholder input {
+  border-radius: 20px;
+  width: 450px;
+  height: 52px;
+  background: #FFFFFF;
+  border: 2px solid black;
+  text-indent: 20px;
+  color: black;
+  font-weight: 900;
+  font-family: "Manrope";
+  font-size: 18px;
+}
+body #login #forms #submitholder {
+  width: 100%;
+  margin-top: 50px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #login #forms #submitholder input {
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  background: #FA5300;
+  border: 0;
+  color: white;
+  font-weight: 900;
+  font-family: "Manrope";
+  font-size: 18px;
+}
+body header {
+  width: auto;
+  height: 172px;
+  background: #F9FAFB;
+}
+body header #head {
+  display: flex;
+  width: auto;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 72px 0 72px;
+}
+body header #head .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 115px;
+  height: 48px;
+}
+body header #head .logo img {
+  height: 48px;
+  width: 48px;
+}
+body header #head .logo svg {
+  color: #0E1117;
+  height: 29px;
+  width: 60px;
+}
+body header #head #profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 180px;
+  height: 52px;
+}
+body header #head #profile #profname {
+  width: 116px;
+  height: 52px;
+}
+body header #head #profile #profname h1 {
+  margin-top: 4px;
+  width: 116px;
+  height: 26px;
+  color: #0E1117;
+  font-weight: 700;
+  font-family: "Manrope";
+  font-size: 16px;
+  text-align: start;
+}
+body header #head #profile #profname h2 {
+  width: 48px;
+  height: 24px;
+  color: #445371;
+  font-weight: 700;
+  font-family: "Manrope";
+  font-size: 14px;
+  text-align: start;
+}
+body header #head #profile #avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  border: 2px solid #FA5300;
+}
+body header #head #profile #avatar img {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+}
+body header #btns {
+  width: auto;
+  height: 72px;
+  display: flex;
+  gap: 30px;
+  padding-left: 72px;
+}
+body header #btns .faq {
+  width: 76px;
+  height: 72px;
+}
+body header #btns .faq p {
+  width: 44px;
+}
+body header #btns .faqactive {
+  border-bottom: 2px solid #FA5300;
+}
+body header #btns .faqactive p {
+  color: #FA5300;
+}
+body header #btns .homeactive {
+  border-bottom: 2px solid #019F3C;
+}
+body header #btns .homeactive p {
+  color: #019F3C;
+}
+body header #btns .news {
+  border-bottom: 2px solid #1998FF;
+}
+body header #btns .news p {
+  color: #1998FF;
+}
+body header #btns .events {
+  border-bottom: 2px solid #F29100;
+}
+body header #btns .events p {
+  color: #F29100;
+}
+body header #btns div {
+  width: 96px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body header #btns div:hover {
+  cursor: pointer;
+}
+body header #btns div p {
+  width: 64px;
+  height: 22px;
+  color: #0E1117;
+  font-weight: 700;
+  font-family: "Manrope";
+  font-size: 16px;
+}
+body header #btns div .svgdiv {
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+body main .backbtn {
+  margin: 24px 0 0 72px;
+  align-self: start;
+  width: 128px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body main .backbtn:hover {
+  cursor: pointer;
+}
+body main .backbtn p {
+  text-align: center;
+  color: #445371;
+  font-weight: 700;
+  font-family: "Manrope";
+  font-size: 16px;
+}
+body main .backbtn .svgdiv {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .studnews {
+  background: #F29100;
+  width: 101px;
+  height: 24px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .studnews p {
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-family: "Manrope";
+  font-size: 10px;
+}
+body main .studnews p:before {
+  content: "Наши студенты";
+}
+body main .osnovnews {
+  background: #1998FF;
+  width: 119px;
+  height: 24px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .osnovnews p {
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-family: "Manrope";
+  font-size: 10px;
+}
+body main .osnovnews p:before {
+  content: "Основные новости";
+}
+body main .newsclick {
+  width: 1776px;
+  height: 464px;
+  display: flex;
+  gap: 24px;
+}
+body main .newsclick:hover {
+  cursor: pointer;
+}
+body main .newsclick .news-item {
+  width: 336px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  background: #FFFFFF;
+  gap: 16px;
+  height: 464px;
+}
+body main .newsclick .news-item img {
+  margin: 16px 16px 0 16px;
+  width: 304px;
+  height: 180px;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: 0px -35px;
+}
+body main .newsclick .news-item div {
+  margin-left: 16px;
+}
+body main .newsclick .news-item .oglavnews {
+  margin: 0 16px 0 16px;
+  width: 304px;
+  height: 40px;
+  text-align: center;
+  color: #0E1117;
+  font-weight: 900;
+  font-family: "Manrope";
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 20px;
+}
+body main .newsclick .news-item .smalltextnews {
+  width: 304px;
+  margin: 0 16px 0 16px;
+  height: 100px;
+  color: #445371;
+  font-weight: 600;
+  font-family: "Manrope";
+  font-size: 14px;
+  display: flex;
+  text-align: start;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 20px;
+}
+body main .newsclick .news-item .smalldate {
+  border-radius: 0;
+  width: 304px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .newsclick .news-item .smalldate p {
+  opacity: 80%;
+  text-align: center;
+  color: #0E1117;
+  font-weight: 600;
+  font-family: "Manrope";
+  font-size: 12px;
+}
+body main #eventclickmain {
+  width: 1776px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+body main #eventclickmain .eventclick {
+  width: 100%;
+  height: 308px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+body main #eventclickmain .eventclick:hover {
+  cursor: pointer;
+}
+body main #eventclickmain .eventclick .activevent {
+  border-radius: 24px;
+  width: 336px;
+  height: 308px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  background: #FFFFFF;
+}
+body main #eventclickmain .eventclick .activevent img {
+  margin: 16px 16px 0 16px;
+  width: 304px;
+  height: 180px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+body main #eventclickmain .eventclick .activevent p {
+  width: 304px;
+  height: 40px;
+  text-align: center;
+  color: #0E1117;
+  font-weight: 900;
+  font-family: "Manrope";
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 20px;
+}
+body main #eventclickmain .eventclick .activevent .smalldate {
+  border-radius: 0;
+  width: 304px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+body main #eventclickmain .eventclick .activevent .smalldate p {
+  text-align: center;
+  opacity: 80%;
+  color: #0E1117;
+  font-weight: 600;
+  font-family: "Manrope";
+  font-size: 12px;
+}
+body main .more {
+  width: 1776px;
+  height: 58px;
+  background: #FFFFFF;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .more:hover {
+  cursor: pointer;
+}
+body main .more p {
+  text-align: center;
+  color: #FA5300;
+  font-weight: 900;
+  font-family: "Manrope";
+  font-size: 16px;
+}
+body main #glavnaya {
+  display: flex;
+  flex-direction: column;
+}
+body main #glavnaya #maindiv {
+  width: 100%;
+  height: 550px;
+  margin: 24px 0 24px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+body main #glavnaya #maindiv #photos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 1776px;
+  height: 532px;
+  overflow: hidden;
+}
+body main #glavnaya #maindiv #photos .list {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  display: flex;
+  height: 100%;
+}
+body main #glavnaya #maindiv #photos .list .sliderimg {
+  position: relative;
+  margin: 16px;
+  width: 1750px;
+  height: 500px;
+}
+body main #glavnaya #maindiv #photos .list .sliderimg img {
+  width: 1700px;
+  height: 500px;
+  border-radius: 20px;
+}
+body main #glavnaya #maindiv #photos .prev {
+  left: 55px;
+  width: 48px;
+  height: 48px;
+  background: white;
+}
+body main #glavnaya #maindiv #photos .next {
+  right: 55px;
+  background: white;
+  width: 48px;
+  height: 48px;
+}
+body main #glavnaya #maindiv #photos .sliderbtns {
+  position: absolute;
+  width: 1650px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main #glavnaya #maindiv #photos .sliderbtns .prev {
+  left: 55px;
+}
+body main #glavnaya #maindiv #photos .sliderbtns .next {
+  right: 55px;
+}
+body main #glavnaya #maindiv #photos .sliderbtns .sliderbtns2 {
+  width: 48px;
+  background: white;
+  border-radius: 12px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main #glavnaya #maindiv #photos .sliderbtns .sliderbtns2 div {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main #glavnaya #maindiv #photos .sliderbtns .sliderbtns2:hover {
+  cursor: pointer;
+}
+body main #glavnaya #maindiv #slider {
+  width: 1750px;
+  height: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+body main #glavnaya #maindiv #slider div {
+  border-radius: 24px;
+  width: 415px;
+  height: 4px;
+  background: #D0D4DC;
+}
+body main #glavnaya #maindiv #slider .activslide {
+  background: #FA5300;
+}
+body main #glavnaya #newsmain {
+  width: 100%;
+  height: 600px;
+  padding: 24px 0 24px 0;
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+}
+body main #glavnaya #newsmain #mainnewslogo {
+  margin-left: 65px;
+  width: 155px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main #glavnaya #newsmain #mainnewslogo div {
+  width: 24px;
+  height: 24px;
+  margin-top: auto;
+}
+body main #glavnaya #newsmain #mainnewslogo h1 {
+  width: 119px;
+  height: 32px;
+  text-align: center;
+  color: #0E1117;
+  font-weight: 700;
+  font-family: "Manrope";
+  font-size: 28px;
+}
+body main #glavnaya #newsmain #newsclickmain {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 1776px;
+  height: 538px;
+}
+body main #glavnaya #eventmain {
+  width: 100%;
+  height: 444px;
+  padding: 24px 0 24px 0;
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  align-items: center;
+}
+body main #glavnaya #eventmain #maineventlogo {
+  align-self: start;
+  margin-left: 65px;
+  width: 160px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main #glavnaya #eventmain #maineventlogo div {
+  width: 24px;
+  height: 24px;
+  margin-top: auto;
+}
+body main #glavnaya #eventmain #maineventlogo h1 {
+  width: 119px;
+  height: 32px;
+  text-align: center;
+  color: #0E1117;
+  font-weight: 700;
+  font-family: "Manrope";
+  font-size: 28px;
+}
+body main #faqmain {
+  width: 100%;
+  height: 2258px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-direction: column;
+}
+body main #faqmain #mainfaqlogo {
+  margin-top: 24px;
+  width: 1776px;
+  height: 32px;
+  display: flex;
+  align-items: start;
+  gap: 12px;
+}
+body main #faqmain #mainfaqlogo div {
+  width: 24px;
+  height: 24px;
+  margin-top: auto;
+}
+body main #faqmain #mainfaqlogo h1 {
+  width: 77px;
+  height: 32px;
+  text-align: center;
+  color: #0E1117;
+  font-weight: 700;
+  font-family: "Manrope";
+  font-size: 28px;
+}
+body main #faqmain img {
+  width: 1776px;
+  height: 532px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+body main #faqmain #faqtext {
+  width: 1776px;
+  height: 1582px;
+  background: #FFFFFF;
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main #faqmain #faqtext p {
+  width: 1728px;
+  height: 1534px;
+  text-align: start;
+  line-height: 26px;
+  color: black;
+  font-weight: 500;
+  font-family: "Manrope";
+  font-size: 18px;
+}
+body main #pagenews {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+body main #pagenews #infonews {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  gap: 32px;
+}
+body main #pagenews #infonews #oglav {
+  width: 1776px;
+  height: auto;
+  color: #0E1117;
+  font-weight: 900;
+  font-family: "Manrope";
+  font-size: 36px;
+  text-align: center;
+  line-height: 44px;
+}
+body main #pagenews #infonews #datenews {
+  width: 1776px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+body main #pagenews #infonews #datenews #date {
+  text-align: center;
+  color: #858FA3;
+  font-weight: 700;
+  font-family: "Manrope";
+  font-size: 14px;
+}
+body main #pagenews #infonews #newsphoto {
+  width: 1776px;
+  margin-bottom: 32px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main #pagenews #infonews #newsphoto img {
+  width: auto;
+  height: auto;
+  margin: 16px;
+  object-fit: contain;
+  border-radius: 20px;
+}
+body main #pagenews #textnews {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+body main #pagenews #textnews #oglav2 {
+  color: #0E1117;
+  font-weight: 900;
+  font-family: "Manrope";
+  font-size: 26px;
+  line-height: 32px;
+  margin-top: 24px;
+}
+body main #pagenews #textnews #hashtag {
+  margin-bottom: 24px;
+}
+body main #pagenews #textnews p {
+  color: #0E1117;
+  font-weight: 700;
+  font-family: "Manrope";
+  font-size: 18px;
+  text-align: start;
+  line-height: 26px;
+  width: 1120px;
+  height: auto;
+}
+body main #pagenews #morenews {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-direction: column;
+}
+body main #pagenews #morenews .more {
+  margin-bottom: 24px;
+}
+body main #pagenews #morenews #morenewslogo {
+  margin-top: 24px;
+  width: 1776px;
+  height: 32px;
+  display: flex;
+  align-items: start;
+  gap: 12px;
+}
+body main #pagenews #morenews #morenewslogo .svgdiv {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main #pagenews #morenews #morenewslogo h1 {
+  text-align: center;
+  width: 222px;
+  height: 32px;
+  color: black;
+  font-weight: 700;
+  font-family: "Manrope";
+  font-size: 28px;
+}
+body main #pagevent {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  align-items: center;
+}
+body main #pagevent #infoevents {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  height: auto;
+}
+body main #pagevent #infoevents #oglav {
+  width: 1776px;
+  height: 32px;
+  color: black;
+  font-weight: 900;
+  font-family: "Manrope";
+  font-size: 36px;
+  text-align: center;
+}
+body main #pagevent #infoevents #datevent {
+  width: 1776px;
+  height: 24px;
+}
+body main #pagevent #infoevents #datevent #date {
+  text-align: start;
+  margin-left: 72px;
+  color: #858FA3;
+  font-weight: 700;
+  font-family: "Manrope";
+  font-size: 14px;
+}
+body main #pagevent #infoevents #eventphoto {
+  align-self: center;
+  width: 1776px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main #pagevent #infoevents #eventphoto img {
+  width: 1200px;
+  height: auto;
+  margin: 16px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+body main #pagevent #textevent {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+body main #pagevent #textevent #oglav2 {
+  color: #0E1117;
+  font-weight: 900;
+  font-family: "Manrope";
+  font-size: 26px;
+  line-height: 32px;
+  margin-top: 24px;
+}
+body main #pagevent #textevent #hashtag {
+  margin-bottom: 24px;
+}
+body main #pagevent #textevent p {
+  color: #0E1117;
+  font-weight: 700;
+  font-family: "Manrope";
+  font-size: 18px;
+  text-align: start;
+  line-height: 26px;
+  width: 1120px;
+  height: auto;
+}
+body main #pagevent #morevents {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+body main #pagevent #morevents #maineventlogo {
+  width: 1776px;
+  height: 32px;
+  display: flex;
+  align-items: start;
+  gap: 12px;
+}
+body main #pagevent #morevents #maineventlogo .svgdiv {
+  width: 24px;
+  height: 24px;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+}
+body main #pagevent #morevents #maineventlogo h1 {
+  text-align: center;
+  width: 226px;
+  height: 32px;
+  color: black;
+  font-weight: 700;
+  font-family: "Manrope";
+  font-size: 28px;
+}
+body main #eventbig {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+body main #eventbig #bigeventlogo {
+  margin-top: 24px;
+  width: 1776px;
+  height: 32px;
+  display: flex;
+  align-items: start;
+  gap: 12px;
+}
+body main #eventbig #bigeventlogo .svgdiv {
+  width: 24px;
+  height: 24px;
+  margin-top: auto;
+}
+body main #eventbig #bigeventlogo h1 {
+  text-align: center;
+  width: 119px;
+  height: 32px;
+  color: black;
+  font-weight: 700;
+  font-family: "Manrope";
+  font-size: 28px;
+}
+body main #eventbig .dateoutext {
+  text-align: start;
+  width: 1776px;
+  height: 32px;
+  margin-bottom: 16px;
+  color: black;
+  font-weight: 700;
+  font-family: "Manrope";
+  font-size: 28px;
+}
+body main #eventbig #bigeventmain {
+  width: 1776px;
+  height: auto;
+}
+body main #eventbig .numbers {
+  width: 158px;
+  height: 48px;
+  display: flex;
+  margin-bottom: 25px;
+  justify-content: space-between;
+  align-items: center;
+}
+body main #eventbig .numbers .svgdiv {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main #eventbig .numbers div:hover {
+  cursor: pointer;
+}
+body main #eventbig .numbers .page {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  border: 2px solid #F29100;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main #eventbig .numbers .page p {
+  text-align: center;
+  color: #F29100;
+  font-weight: 700;
+  font-family: "Manrope";
+  font-size: 18px;
+}
+body main #eventbig .numbers .back {
+  width: 48px;
+  height: 48px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main #eventbig .numbers .forward {
+  width: 48px;
+  height: 48px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main #newsbig {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-direction: column;
+}
+body main #newsbig #bignewslogo {
+  margin-top: 24px;
+  width: 1776px;
+  height: 32px;
+  display: flex;
+  align-items: start;
+  gap: 12px;
+}
+body main #newsbig #bignewslogo div {
+  width: 24px;
+  height: 24px;
+  margin-top: auto;
+}
+body main #newsbig #bignewslogo h1 {
+  text-align: center;
+  width: 119px;
+  height: 32px;
+  color: #0E1117;
+  font-weight: 700;
+  font-family: "Manrope";
+  font-size: 28px;
+}
+body main #newsbig #bignewsmain {
+  width: 1776px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+body main #newsbig .numbers {
+  width: 158px;
+  height: 48px;
+  display: flex;
+  margin-bottom: 25px;
+  justify-content: space-between;
+  align-items: center;
+}
+body main #newsbig .numbers .svgdiv {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main #newsbig .numbers div:hover {
+  cursor: pointer;
+}
+body main #newsbig .numbers .page {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  border: 2px solid #F29100;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main #newsbig .numbers .page p {
+  text-align: center;
+  color: #F29100;
+  font-weight: 700;
+  font-family: "Manrope";
+  font-size: 18px;
+}
+body main #newsbig .numbers .back {
+  width: 48px;
+  height: 48px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main #newsbig .numbers .forward {
+  width: 48px;
+  height: 48px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body footer {
+  width: 100%;
+  height: 228px;
+  display: flex;
+  flex-direction: column;
+  background: #F9FAFB;
+  align-items: center;
+  gap: 48px;
+}
+body footer #foot {
+  margin-top: 32px;
+  width: 1776px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body footer #foot .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 115px;
+  height: 48px;
+}
+body footer #foot .logo img {
+  height: 48px;
+  width: 48px;
+}
+body footer #foot .logo svg {
+  color: #0E1117;
+  height: 29px;
+  width: 60px;
+}
+body footer #foot .btns {
+  width: 519px;
+  height: 24px;
+  display: flex;
+  gap: 30px;
+  padding-left: 72px;
+}
+body footer #foot .btns .faq {
+  width: 76px;
+  height: 24px;
+}
+body footer #foot .btns .faq p {
+  width: 44px;
+}
+body footer #foot .btns .faqactive {
+  border-bottom: 2px solid #FA5300;
+}
+body footer #foot .btns .faqactive p {
+  color: #FA5300;
+}
+body footer #foot .btns .home {
+  border-bottom: 2px solid #019F3C;
+}
+body footer #foot .btns .home p {
+  color: #019F3C;
+}
+body footer #foot .btns .news {
+  border-bottom: 2px solid #1998FF;
+}
+body footer #foot .btns .news p {
+  color: #1998FF;
+}
+body footer #foot .btns .events {
+  border-bottom: 2px solid #F29100;
+}
+body footer #foot .btns .events p {
+  color: #F29100;
+}
+body footer #foot .btns div {
+  width: 96px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body footer #foot .btns div:hover {
+  cursor: pointer;
+}
+body footer #foot .btns div p {
+  width: 64px;
+  height: 22px;
+  text-align: center;
+  color: #0E1117;
+  font-weight: 700;
+  font-family: "Manrope";
+  font-size: 16px;
+}
+body footer #foot .btns div .svgdiv {
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+body footer #foot #up {
+  width: 48px;
+  height: 48px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body footer #foot #up div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+body footer #initials {
+  margin-left: 72px;
+  align-self: start;
+  width: 441px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body footer #initials p {
+  width: 214px;
+  height: 20px;
+  opacity: 80%;
+  text-align: center;
+  color: #445371;
+  font-weight: 700;
+  font-family: "Manrope";
+  font-size: 12px;
+}
+body footer #initials p a {
+  color: #445371;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,30 @@
+@mixin p($size, $color, $weight){
+  color: $color;
+  font-weight: $weight;
+  font-family: "Manrope";
+  font-size: $size;
+}
+@mixin homeactiv{
+  p{
+      color: #019F3C;
+  }
+  border-bottom: 2px solid #019F3C;
+}
+@mixin faqactiv{
+  p{
+    color: #FA5300;
+  }
+  border-bottom: 2px solid #FA5300;
+}
+@mixin newsactiv{
+  p{
+    color: #1998FF;
+  }
+  border-bottom: 2px solid #1998FF;
+}
+@mixin eventactiv{
+  p{
+    color: #F29100;
+  }
+  border-bottom: 2px solid #F29100;
+}
